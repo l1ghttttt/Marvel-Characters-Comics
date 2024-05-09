@@ -1,0 +1,127 @@
+.comicss {
+  width: 1100px;
+  height: auto;
+  margin-bottom: 50px;
+}
+
+.comicss .comicDitail {
+  display: flex;
+  margin-top: 47px;
+}
+
+.comicsImage {
+  max-width: 300px;
+  min-height: 450px;
+}
+
+.comicss .comicDitail .comicInfo {
+  display: flex;
+  margin-left: 50px;
+  width: 100%;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.comicss .comicDitail .comicInfo .comicText {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  max-width: 550px;
+}
+
+.comicss .comicDitail .comicInfo .comicText h2 {
+  font-weight: 700;
+  font-size: 22px;
+  color: #000;
+  text-align: start;
+}
+
+.comicss .comicDitail .comicInfo .comicText h3 {
+  font-weight: 400;
+  font-size: 18px;
+  color: #000;
+  text-align: start;
+}
+
+.cssload-container2 {
+  width: 100%;
+  height: 294px;
+  text-align: center;
+}
+
+.cssload-speeding-wheel2 {
+  width: 294px;
+  height: 294px;
+  margin: 0 auto;
+  border: 18px solid rgb(0, 0, 0);
+  border-radius: 50%;
+  border-left-color: transparent;
+  border-right-color: transparent;
+  animation: cssload-spin 725ms infinite linear;
+  -o-animation: cssload-spin 725ms infinite linear;
+  -ms-animation: cssload-spin 725ms infinite linear;
+  -webkit-animation: cssload-spin 725ms infinite linear;
+  -moz-animation: cssload-spin 725ms infinite linear;
+}
+
+@keyframes cssload-spin2 {
+  100% {
+    transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-o-keyframes cssload-spin2 {
+  100% {
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-ms-keyframes cssload-spin2 {
+  100% {
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes cssload-spin2 {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-moz-keyframes cssload-spin2 {
+  100% {
+    -moz-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+.comicDitail-loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1100px;
+  height: 500px;
+  margin-bottom: 50px;
+}
+
+.red-button {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  transition: 0.3s ease;
+  transform: skewX(-10deg);
+  width: 170px;
+  height: 38px;
+}
+
+.red-button:hover {
+  background-color: darkred;
+  transform: skewX(-10deg) scale(1.05);
+  box-shadow: 2px 4px 5px red;
+}
+
+/*# sourceMappingURL=comics-detail.css.map */

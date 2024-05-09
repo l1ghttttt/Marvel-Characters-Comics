@@ -1,0 +1,31 @@
+.AppComics {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 65px;
+  width: 1100px;
+  margin-bottom: 50px;
+}
+
+.red-button {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  transition: 0.3s ease;
+  transform: skewX(-10deg);
+  width: 170px;
+  height: 38px;
+}
+
+.red-button:hover {
+  background-color: darkred;
+  transform: skewX(-10deg) scale(1.05);
+  box-shadow: 2px 4px 5px red;
+}
+
+/*# sourceMappingURL=app-comics.css.map */

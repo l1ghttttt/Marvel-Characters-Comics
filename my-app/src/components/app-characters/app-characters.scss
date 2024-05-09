@@ -1,0 +1,76 @@
+main {
+  width: 1100px;
+  margin-bottom: 100px;
+  h4 {
+    width: 100%;
+    text-align: center;
+    margin: 50px 0 25px 0;
+    display: flex;
+    justify-content: center;
+  }
+}
+.AppCharacters-button {
+  width: 170px;
+  height: 38px;
+}
+.AppCharacters {
+  max-width: 1100px;
+  width: 100%;
+  display: flex;
+  gap: 25px;
+  margin-top: 50px;
+  &-list {
+    max-width: 650px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.25);
+    background: #fff;
+    padding: 12px;
+  }
+  &-button {
+    background-color: red;
+  }
+}
+
+.cssload-container {
+  width: 650px;
+  max-height: 1070px;
+  text-align: center;
+}
+
+.cssload-speeding-wheel {
+  width: 56px;
+  height: 56px;
+  margin: 0 auto;
+  border: 3px solid rgb(0,0,0);
+  border-radius: 50%;
+  border-left-color: transparent;
+  border-right-color: transparent;
+  animation: cssload-spin 425ms infinite linear;
+  -o-animation: cssload-spin 425ms infinite linear;
+  -ms-animation: cssload-spin 425ms infinite linear;
+  -webkit-animation: cssload-spin 425ms infinite linear;
+  -moz-animation: cssload-spin 425ms infinite linear;
+}
+
+@keyframes cssload-spin {
+  100%{ transform: rotate(360deg); transform: rotate(360deg); }
+}
+
+@-o-keyframes cssload-spin {
+  100%{ -o-transform: rotate(360deg); transform: rotate(360deg); }
+}
+
+@-ms-keyframes cssload-spin {
+  100%{ -ms-transform: rotate(360deg); transform: rotate(360deg); }
+}
+
+@-webkit-keyframes cssload-spin {
+  100%{ -webkit-transform: rotate(360deg); transform: rotate(360deg); }
+}
+
+@-moz-keyframes cssload-spin {
+  100%{ -moz-transform: rotate(360deg); transform: rotate(360deg); }
+}

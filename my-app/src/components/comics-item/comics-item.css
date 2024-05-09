@@ -1,0 +1,30 @@
+.comics {
+  width: 225px;
+  height: 413px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  gap: 10px;
+}
+.comics-name {
+  font-weight: 700;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  justify-content: flex-start;
+  text-align: start;
+}
+.comics-price {
+  font-weight: 700;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.6);
+  margin: 0;
+}
+.comics-image {
+  box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.25);
+}
+
+/*# sourceMappingURL=comics-item.css.map */

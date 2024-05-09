@@ -1,0 +1,71 @@
+.comicsnull {
+  width: 225px;
+  height: 413px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  gap: 10px;
+  &-name {
+    font-weight: 700;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    justify-content: flex-start;
+    text-align: start;
+  }
+  &-price {
+    font-weight: 700;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.6);
+    margin: 0;
+  }
+  &-image {
+    box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.25);
+  }
+}
+
+@keyframes placeHolderShimmer{
+  0%{
+    background-position: -468px 0
+  }
+  100%{
+    background-position: 468px 0
+  }
+}
+.placeholderImageComics {
+  width: 225px;
+  height: 345px;
+}
+
+.placeholderTextComics {
+  width: 200px;
+  height: 35px;
+}
+.animated-backgroundImageComics {
+  animation-duration: 1.25s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-name: placeHolderShimmer;
+  animation-timing-function: linear;
+  background: darkgray;
+  background: linear-gradient(to right, #eeeeee 10%, #dddddd 18%, #eeeeee 33%);
+  background-size: 800px 104px;
+  height: 345px;
+  position: relative;
+}
+
+.animated-backgroundTextComics {
+  animation-duration: 1.25s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-name: placeHolderShimmer;
+  animation-timing-function: linear;
+  background: darkgray;
+  background: linear-gradient(to right, #eeeeee 10%, #dddddd 18%, #eeeeee 33%);
+  background-size: 800px 104px;
+  height: 35px;
+  position: relative;
+}

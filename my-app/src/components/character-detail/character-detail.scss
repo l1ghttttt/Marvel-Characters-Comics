@@ -1,0 +1,160 @@
+.CharacterDetail {
+  width: 425px;
+  height: 763px;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.25);
+  background: #fff;
+  padding: 12px;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.CharacterDetail-cont {
+  display: flex;
+  justify-content: flex-start;
+  gap: 10%;
+}
+.CharacterDetail-image {
+  width: 150px;
+  height: 150px;
+}
+.CharacterDetail-name {
+  font-weight: 700;
+  font-size: 22px;
+  margin: 0;
+}
+.CharacterDetail-home {
+  width: 101px;
+  height: 38px;
+  background-color: red;
+  font-weight: 400;
+  font-size: 14px;
+  color: #fff;
+  margin: 0;
+}
+.CharacterDetail-wiki {
+  width: 101px;
+  height: 38px;
+  font-weight: 400;
+  font-size: 14px;
+  color: #fff;
+  background-color: gray;
+}
+.CharacterDetail-description {
+  font-weight: 400;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+}
+.CharacterDetail-comics {
+  font-weight: 700;
+  font-size: 18px;
+  color: #000;
+  margin: 0;
+}
+.CharacterDetail-buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 20px;
+}
+.CharacterDetail-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0;
+}
+.CharacterDetail-description {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+.CharacterDetail ul {
+  list-style-type: none;
+  padding: 0px;
+  margin-top: 20px;
+}
+.CharacterDetail li {
+  padding: 10px;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.25);
+  margin: 10px;
+}
+.CharacterDetail li a {
+  color: #000;
+  text-decoration: none;
+}
+.linkContainer {
+  max-width: 170px;
+  max-height: 38px;
+}
+.red-button {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  transition: 0.3s ease;
+  transform: skewX(-10deg);
+  width: 170px;
+  height: 38px;
+}
+
+.red-button:hover {
+  background-color: darkred;
+  transform: skewX(-10deg) scale(1.05);
+  box-shadow: 2px 4px 5px red;
+}
+.gray-button {
+  background-color: #606060;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  transition: 0.3s ease;
+  transform: skewX(-10deg);
+  &-detail {
+    background-color: #606060;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition: 0.3s ease;
+    transform: skewX(-10deg);
+    width: 170px;
+    height: 38px;
+  }
+  &-detail:hover {
+    background-color: #444444;
+    transform: skewX(-10deg) scale(1.05);
+    box-shadow: 2px 4px 5px #606060;
+  }
+}
+
+.gray-button:hover {
+  background-color: #444444;
+  transform: skewX(-10deg) scale(1.05);
+  box-shadow: 2px 4px 5px #606060;
+}
+.alert-enter {
+  opacity: 0;
+  transform: scale(0.9);
+}
+.alert-enter-active {
+  opacity: 1;
+  transform: translateX(0);
+  transition: opacity 300ms, transform 300ms;
+}
+.alert-exit {
+  opacity: 1;
+}
+.alert-exit-active {
+  opacity: 0;
+  transform: scale(0.9);
+  transition: opacity 300ms, transform 300ms;
+}
