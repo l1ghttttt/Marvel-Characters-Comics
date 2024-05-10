@@ -36,7 +36,7 @@ const AppCharacters = () => {
         <main>
             <div className='AppCharacters'>
                 <div className='AppCharacters-list'>
-                    {characters.length === loadingTimes ? characterList : <View loadingTimes={loadingTimes}/>}
+                    {characters.length === loadingTimes ? characterList : <View loadingTimes={loadingTimes} characterList={characterList}/>}
                     {characters.length === loadingTimes && loadedToggle === false ? setLoadedToggle(true) : null}
                     <button
                         className='red-button'
@@ -55,17 +55,16 @@ const AppCharacters = () => {
         </main>
     )
 }
-const View = ({loadingTimes}) => {
-
+const View = ({loadingTimes, characterList}) => {
     const ar = [];
-    for (let i = 0; i < loadingTimes; i++) {
+    for (let i = 0; i < loadingTimes-characterList.length; i++) {
         ar.push(
-
             <CharactersItemnull key={i}/>
         )
     }
     return (
         <>
+            {characterList}
             {ar}
         </>
     )

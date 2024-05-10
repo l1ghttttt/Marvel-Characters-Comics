@@ -3,6 +3,7 @@ import ComicsItem from "../comics-item/comics-item";
 import MarvelService from "../../services/MarvelService";
 import ComicsItemNull from "../comics-itemnull/comics-itemnull";
 import './app-comics.css'
+import '../../mixins.scss'
 
 const marvelService = new MarvelService();
 
@@ -32,7 +33,7 @@ const AppComics = () => {
 
     return (
         <main className="AppComics">
-            {comics.length === loadingTimes ? comicsList : <ViewComics loadingTimes={loadingTimes}/>}
+            {comics.length === loadingTimes ? comicsList : <ViewComics loadingTimes={loadingTimes} comicsList={comicsList}/>}
             {comics.length === loadingTimes && loadedToggle === false ? setLoadedToggle(true) : null}
             <button
                 className='red-button'
@@ -49,15 +50,16 @@ const AppComics = () => {
     );
 }
 
-const ViewComics = ({loadingTimes}) => {
+const ViewComics = ({loadingTimes, comicsList}) => {
     const ar = [];
-    for (let i = 0; i < loadingTimes; i++) {
+    for (let i = 0; i < loadingTimes-comicsList.length; i++) {
         ar.push(
             <ComicsItemNull key={i}/>
         )
     }
     return (
         <>
+            {comicsList}
             {ar}
         </>
     )
