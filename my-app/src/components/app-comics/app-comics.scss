@@ -1,3 +1,12 @@
+$mobile-above: 768px;
+$mobile: 767px;
+
+@mixin mobile {
+  @media (max-width: $mobile) {
+    @content;
+  }
+}
+
 .AppComics {
   display: flex;
   flex-wrap: wrap;
@@ -6,7 +15,10 @@
   width: 1100px;
   margin-bottom: 50px;
   @include mobile {
-    background-color: red;
+    width: 100vw;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
   }
 }
 .red-button {

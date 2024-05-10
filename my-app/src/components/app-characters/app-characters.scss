@@ -1,6 +1,18 @@
+$mobile-above: 768px;
+$mobile: 767px;
+
+@mixin mobile {
+  @media (max-width: $mobile) {
+    @content;
+  }
+}
+
 main {
   width: 1100px;
   margin-bottom: 100px;
+  @include mobile {
+    width: 100%;
+  }
   h4 {
     width: 100%;
     text-align: center;
@@ -19,6 +31,10 @@ main {
   display: flex;
   gap: 25px;
   margin-top: 50px;
+  @include mobile {
+    flex-direction: column;
+    width: 100%;
+  }
   &-list {
     max-width: 650px;
     display: flex;
@@ -28,6 +44,9 @@ main {
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.25);
     background: #fff;
     padding: 12px;
+    @include mobile {
+      order: 2;
+    }
   }
   &-button {
     background-color: red;

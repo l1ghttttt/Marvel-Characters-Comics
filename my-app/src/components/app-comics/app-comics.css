@@ -1,18 +1,39 @@
-/* Error: Undefined mixin.
- *    ,
- * 8  | /   @include mobile {
- * 9  | |     background-color: red;
- * 10 | \   }
- *    '
- *   app-comics.scss 8:3  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined mixin.\a    \2577 \a 8  \2502  \250c    @include mobile {\a 9  \2502  \2502      background-color: red;\a 10 \2502  \2514    }\a    \2575 \a   app-comics.scss 8:3  root stylesheet";
+.AppComics {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 65px;
+  width: 1100px;
+  margin-bottom: 50px;
 }
+@media (max-width: 767px) {
+  .AppComics {
+    width: 100vw;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+  }
+}
+
+.red-button {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  transition: 0.3s ease;
+  transform: skewX(-10deg);
+  width: 170px;
+  height: 38px;
+}
+
+.red-button:hover {
+  background-color: darkred;
+  transform: skewX(-10deg) scale(1.05);
+  box-shadow: 2px 4px 5px red;
+}
+
+/*# sourceMappingURL=app-comics.css.map */

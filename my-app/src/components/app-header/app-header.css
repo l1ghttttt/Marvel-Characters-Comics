@@ -8,7 +8,11 @@
 }
 @media (max-width: 767px) {
   .App-header {
-    width: 100%;
+    width: 80vw !important;
+    height: auto;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
   }
 }
 .App-header h1 {
@@ -17,11 +21,30 @@
   color: #000;
   margin: 0;
 }
+@media (max-width: 767px) {
+  .App-header h1 {
+    font-size: 25px;
+    box-shadow: 0 0 10px #000;
+    height: auto;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+  }
+}
 .App-header h2 {
   font-weight: 700;
   font-size: 24px;
   height: 32px;
   margin: 0;
+}
+@media (max-width: 767px) {
+  .App-header h2 {
+    font-size: 25px;
+    box-shadow: 0 0 10px #000;
+    height: auto;
+    padding: 10px;
+    border-radius: 10px;
+  }
 }
 .App-header-word_red {
   color: red;

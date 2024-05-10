@@ -1,4 +1,5 @@
 .CharacterDetail {
+  box-sizing: border-box;
   width: 425px;
   height: 763px;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.25);
@@ -6,6 +7,15 @@
   padding: 12px;
   overflow-x: hidden;
   overflow-y: auto;
+}
+@media (max-width: 767px) {
+  .CharacterDetail {
+    order: 1;
+    width: 100%;
+    padding: 20px;
+    height: auto;
+    max-height: 763px;
+  }
 }
 
 .CharacterDetail-cont {
@@ -17,6 +27,11 @@
 .CharacterDetail-image {
   width: 150px;
   height: 150px;
+}
+@media (max-width: 767px) {
+  .CharacterDetail-image {
+    border-radius: 10px;
+  }
 }
 
 .CharacterDetail-name {
@@ -57,6 +72,11 @@
   color: #000;
   margin: 0;
 }
+@media (max-width: 767px) {
+  .CharacterDetail-comics {
+    text-align: center;
+  }
+}
 
 .CharacterDetail-buttons {
   display: flex;
@@ -82,11 +102,19 @@
   padding: 0px;
   margin-top: 20px;
 }
+@media (max-width: 767px) {
+  .CharacterDetail ul {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+}
 
 .CharacterDetail li {
   padding: 10px;
   box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.25);
   margin: 10px;
+  width: 80%;
 }
 
 .CharacterDetail li a {
@@ -131,6 +159,20 @@
   font-size: 16px;
   transition: 0.3s ease;
   transform: skewX(-10deg);
+}
+@media (max-width: 767px) {
+  .gray-button {
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition: 0.3s ease;
+    transform: skewX(-10deg);
+    width: 170px;
+    height: 38px;
+  }
 }
 .gray-button-detail {
   background-color: #606060;

@@ -1,4 +1,14 @@
+$mobile-above: 768px;
+$mobile: 767px;
+
+@mixin mobile {
+  @media (max-width: $mobile) {
+    @content;
+  }
+}
+
 .CharacterDetail {
+  box-sizing: border-box;
   width: 425px;
   height: 763px;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.25);
@@ -6,6 +16,13 @@
   padding: 12px;
   overflow-x: hidden;
   overflow-y: auto;
+  @include mobile {
+    order: 1;
+    width: 100%;
+    padding: 20px;
+    height: auto;
+    max-height: 763px;
+  }
 }
 .CharacterDetail-cont {
   display: flex;
@@ -15,6 +32,9 @@
 .CharacterDetail-image {
   width: 150px;
   height: 150px;
+  @include mobile {
+    border-radius: 10px;
+  }
 }
 .CharacterDetail-name {
   font-weight: 700;
@@ -49,6 +69,9 @@
   font-size: 18px;
   color: #000;
   margin: 0;
+  @include mobile {
+    text-align: center;
+  }
 }
 .CharacterDetail-buttons {
   display: flex;
@@ -70,11 +93,17 @@
   list-style-type: none;
   padding: 0px;
   margin-top: 20px;
+  @include mobile {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
 }
 .CharacterDetail li {
   padding: 10px;
   box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.25);
   margin: 10px;
+  width: 80%;
 }
 .CharacterDetail li a {
   color: #000;
@@ -115,6 +144,18 @@
   font-size: 16px;
   transition: 0.3s ease;
   transform: skewX(-10deg);
+  @include mobile {
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition: 0.3s ease;
+    transform: skewX(-10deg);
+    width: 170px;
+    height: 38px;
+  }
   &-detail {
     background-color: #606060;
     color: white;

@@ -3,7 +3,6 @@ import ComicsItem from "../comics-item/comics-item";
 import MarvelService from "../../services/MarvelService";
 import ComicsItemNull from "../comics-itemnull/comics-itemnull";
 import './app-comics.css'
-import '../../mixins.scss'
 
 const marvelService = new MarvelService();
 
