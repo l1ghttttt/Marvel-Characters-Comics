@@ -17,3 +17,11 @@ code {
   --second-family: "Roboto", sans-serif;
   --gg: red;
 }
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: red;
+  border-radius: 5px;
+}

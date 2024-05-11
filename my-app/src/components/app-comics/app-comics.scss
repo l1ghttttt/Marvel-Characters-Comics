@@ -1,8 +1,14 @@
-$mobile-above: 768px;
 $mobile: 767px;
+$tablet: 1023px;
 
 @mixin mobile {
   @media (max-width: $mobile) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (max-width: $tablet) {
     @content;
   }
 }
@@ -15,6 +21,12 @@ $mobile: 767px;
   width: 1100px;
   margin-bottom: 50px;
   @include mobile {
+    width: 100vw;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+  }
+  @include tablet {
     width: 100vw;
     flex-direction: column;
     gap: 50px;

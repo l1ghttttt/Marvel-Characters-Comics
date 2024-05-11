@@ -1,8 +1,14 @@
-$mobile-above: 768px;
 $mobile: 767px;
+$tablet: 1023px;
 
 @mixin mobile {
   @media (max-width: $mobile) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (max-width: $tablet) {
     @content;
   }
 }
@@ -11,6 +17,9 @@ main {
   width: 1100px;
   margin-bottom: 100px;
   @include mobile {
+    width: 100%;
+  }
+  @include tablet {
     width: 100%;
   }
   h4 {
@@ -35,6 +44,10 @@ main {
     flex-direction: column;
     width: 100%;
   }
+  @include tablet {
+    flex-direction: column;
+    width: 100%;
+  }
   &-list {
     max-width: 650px;
     display: flex;
@@ -45,6 +58,9 @@ main {
     background: #fff;
     padding: 12px;
     @include mobile {
+      order: 2;
+    }
+    @include tablet {
       order: 2;
     }
   }

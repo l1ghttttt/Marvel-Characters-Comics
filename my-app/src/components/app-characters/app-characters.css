@@ -7,6 +7,11 @@ main {
     width: 100%;
   }
 }
+@media (max-width: 1023px) {
+  main {
+    width: 100%;
+  }
+}
 main h4 {
   width: 100%;
   text-align: center;
@@ -33,6 +38,12 @@ main h4 {
     width: 100%;
   }
 }
+@media (max-width: 1023px) {
+  .AppCharacters {
+    flex-direction: column;
+    width: 100%;
+  }
+}
 .AppCharacters-list {
   max-width: 650px;
   display: flex;
@@ -44,6 +55,11 @@ main h4 {
   padding: 12px;
 }
 @media (max-width: 767px) {
+  .AppCharacters-list {
+    order: 2;
+  }
+}
+@media (max-width: 1023px) {
   .AppCharacters-list {
     order: 2;
   }

@@ -7,14 +7,20 @@ import './app-comics.css'
 const marvelService = new MarvelService();
 
 const AppComics = () => {
+    const getRandomNumber = (min, max) => {
+        return Math.floor(Math.random()*(max-min+1)) + min;
+    }
     const [comics, setComics] = useState([]);
     const [loadingTimes, setLoadingTimes] = useState()
     const [loadedToggle, setLoadedToggle] = useState()
+    const [random, setRandom] = useState(getRandomNumber(210, 1210))
     const genComics = () => {
-        marvelService.getAllComics().then(res => {
+        marvelService.getAllComics(random).then(res => {
             setComics([...comics, ...res.data.results]);
+            setRandom(random + 8)
         })
     }
+
     useEffect(() =>{
         genComics()
         setLoadingTimes(8)

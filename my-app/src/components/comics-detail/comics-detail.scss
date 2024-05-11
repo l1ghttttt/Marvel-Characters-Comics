@@ -63,13 +63,13 @@ $mobile: 767px;
   text-align: start;
 }
 
-.cssload-container2 {
+.cssload-container-comics {
   width: 100%;
   height: 294px;
   text-align: center;
 }
 
-.cssload-speeding-wheel2 {
+.cssload-speeding-comics {
   width: 294px;
   height: 294px;
   margin: 0 auto;
@@ -77,11 +77,11 @@ $mobile: 767px;
   border-radius: 50%;
   border-left-color: transparent;
   border-right-color: transparent;
-  animation: cssload-spin 725ms infinite linear;
-  -o-animation: cssload-spin 725ms infinite linear;
-  -ms-animation: cssload-spin 725ms infinite linear;
-  -webkit-animation: cssload-spin 725ms infinite linear;
-  -moz-animation: cssload-spin 725ms infinite linear;
+  animation: cssload-spin2 725ms infinite linear;
+  -o-animation: cssload-spin2 725ms infinite linear;
+  -ms-animation: cssload-spin2 725ms infinite linear;
+  -webkit-animation: cssload-spin2 725ms infinite linear;
+  -moz-animation: cssload-spin2 725ms infinite linear;
 }
 
 
@@ -132,4 +132,9 @@ $mobile: 767px;
   background-color: darkred;
   transform: skewX(-10deg) scale(1.05);
   box-shadow: 2px 4px 5px red;
+}
+.comics-controller {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
 }

@@ -16,7 +16,6 @@ const ComicsDetail = () => {
         })
     },[])
 
-
     return (
         <>
             <ComicsHeader/>
@@ -30,8 +29,8 @@ const ComicsDetail = () => {
 const Loading = () => {
     return (
         <div className='comicDitail-loading'>
-            <div className="cssload-container2">
-                <div className="cssload-speeding-wheel2"></div>
+            <div className="cssload-container-comics">
+                <div className="cssload-speeding-comics"></div>
             </div>
         </div>
     )

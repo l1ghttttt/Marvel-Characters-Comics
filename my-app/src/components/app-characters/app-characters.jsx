@@ -7,16 +7,20 @@ import CharactersItemnull from "../characters-itemnull/characters-itemnull";
 
 const marvelService = new MarvelService();
 const AppCharacters = () => {
-
+    const getRandomNumber = (min, max) => {
+        return Math.floor(Math.random()*(max-min+1)) + min;
+    }
     const [characters, setCharacters] = useState([]);
     const [characterAbout, setCharacterAbout] = useState(null);
     const [loadingTimes, setLoadingTimes] = useState()
     const [loadedToggle, setLoadedToggle] = useState()
+    const [random, setRandom] = useState(getRandomNumber(210, 1210))
 
     const genCharacters = () => {
-        marvelService.getAllCharacters().then(res => {
+        marvelService.getAllCharacters(random).then(res => {
             setCharacters([...characters, ...res.data.results])
         })
+        setRandom(random + 9)
     }
     useEffect(() => {
         genCharacters()

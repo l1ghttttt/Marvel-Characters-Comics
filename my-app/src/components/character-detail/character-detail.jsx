@@ -11,7 +11,6 @@ const CharacterDetail = ({characterAbout}) => {
         )
     }
     const comics = characterAbout.comics.items.map((item, id ) => {
-        console.log(item)
         return (
             <li key={id}><NavLink to={`/comics/${item.resourceURI.split('/')[6]}`}>{item.name}</NavLink></li>
         )
